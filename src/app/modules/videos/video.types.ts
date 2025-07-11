@@ -1,5 +1,5 @@
 
-import mongoose from "mongoose"
+
 
 export interface Video {
   title: string,
