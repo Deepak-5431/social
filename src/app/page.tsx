@@ -1,4 +1,11 @@
+"use client";
+
+import { useRouter } from "next/navigation";
+
+
 export default function Home() {
+   
+  const router = useRouter();
   return (
     <main className="flex min-h-screen flex-col items-center justify-center bg-gray-900 text-white">
       <h1 className="text-4xl font-bold animate-in fade-in zoom-in transition-colors duration-300 hover:text-yellow-400">
@@ -7,6 +14,11 @@ export default function Home() {
       <p className="mt-4 text-lg text-gray-300 transition-colors duration-300 hover:text-blue-400">
         Reporting for duty, Commander Deepak.
       </p>
+      <button className="absolute top-4 right-4 px-4 py-2  bg-blue-400 text-black rounded hover:bg-blue-300 transition-colors duration-300"
+      onClick={()=>router.push('/login')}>Login</button>
     </main>
   );
 }
+
+
+
