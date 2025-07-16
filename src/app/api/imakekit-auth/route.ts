@@ -15,7 +15,8 @@ export async function GET() {
     return Response.json({ authenticationParameters, 
       publicKey: process.env.NEXT_PUBLIC_PUBLIC_KEY });
    }
-  catch(error){   
+ catch(error){   
+  { /*
     return Response.json(
       { 
         error : "AUthentication for image kit failed"
@@ -24,7 +25,7 @@ export async function GET() {
       status:500
     }
     )
-   
+   */}
   }
 }
 
