@@ -4,7 +4,7 @@
 export interface IVideo {
   title: string,
   description: string,
-  videoUse: string,
+  videoUrl: string,
   thumbnailUrl: string,
   controls?: boolean,
   transformation?: {

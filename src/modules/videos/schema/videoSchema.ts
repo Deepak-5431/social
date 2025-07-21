@@ -8,7 +8,7 @@ import { IVideo, VIDEO_DIMENSIONS } from "../video.types";
 export const videoSchema = new mongoose.Schema<IVideo>({
      title: {type:String,required:true},
      description: {type:String,required:true},
-     videoUse:{type:String,required:true},
+     videoUrl:{type:String,required:true},
      thumbnailUrl:{type:String,required:true},
      controls:{type:Boolean,required:true},
      transformation:{

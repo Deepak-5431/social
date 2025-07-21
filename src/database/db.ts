@@ -36,10 +36,10 @@ export const connectToDatabase = async() => {
     try{
          cacthed.conn = await cacthed.promise
     }catch(error){
-      { /*
       cacthed.promise = null
-      throw new Error("why not connecting budd") */}
+      throw new Error("why not connecting budd")
     }
     return cacthed.conn
-    
 }
+
+

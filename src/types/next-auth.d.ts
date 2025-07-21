@@ -1,7 +1,4 @@
 
-// src/types/next-auth.d.ts
-
-// eslint-disable-next-line @typescript-eslint/no-unused-vars
 
 
  import NextAuth,{DefaultSession} from "next-auth";
