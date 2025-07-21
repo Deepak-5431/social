@@ -11,35 +11,35 @@ if(!MONGODB_URL){
 }
 
 
-let cacthed = global.mongoose;
+let cached = global.mongoose;
 
-if(!cacthed){
-  cacthed = global.mongoose = {conn: null,promise:null}
+if(!cached){
+  cached = global.mongoose = {conn: null,promise:null}
 }
 
 
 export const connectToDatabase = async() => {
-    if(cacthed.conn){
-      return cacthed.conn
+    if(cached.conn){
+      return cached.conn
     }
 
    
-    if(!cacthed.promise){
+    if(!cached.promise){
       const options = {
          bufferCommands:true,
          maxPoolSize:10,
           dbName:'social-app',
       }
-      cacthed.promise=mongoose.connect(MONGODB_URL,options).
+      cached.promise=mongoose.connect(MONGODB_URL,options).
       then(()=>mongoose.connection)
     }
     try{
-         cacthed.conn = await cacthed.promise
+         cached.conn = await cached.promise
     }catch(error){
-      cacthed.promise = null
+      cached.promise = null
       throw new Error("why not connecting budd")
     }
-    return cacthed.conn
+    return cached.conn
 }
 
 
