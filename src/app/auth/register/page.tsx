@@ -160,7 +160,7 @@ const Register = () => {
             onClick={(e) => {
               e.preventDefault();
               
-              router.push('/login');
+              router.push('/auth/login');
             }}
             className="font-medium text-indigo-600 hover:text-indigo-500 dark:text-indigo-400 dark:hover:text-indigo-300"
           >
