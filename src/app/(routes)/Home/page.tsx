@@ -24,7 +24,7 @@ const Home = () => {
       
       <section id="hero" className="pt-32 pb-20 bg-gradient-to-br from-black via-gray-900 to-black min-h-screen flex flex-col items-center justify-center">
         <div className="text-center">
-          <img src= "https://wallpapers.com/images/hd/goku-readyfor-action-aph1g8yp2w006hxu.jpg"alt="Deepak Avatar" className="w-36 h-36 rounded-full border-4 border-white shadow-xl mx-auto mb-6" />
+          <img src="https://wallpapers.com/images/hd/goku-readyfor-action-aph1g8yp2w006hxu.jpg" alt="Deepak Avatar" className="w-36 h-36 rounded-full border-4 border-white shadow-xl mx-auto mb-6" />
           <h1 className="text-6xl md:text-7xl font-extrabold text-white mb-4">Deepak</h1>
           <p className="text-2xl md:text-3xl text-gray-300 mb-8">Full Stack Developer | UI/UX Enthusiast | Open Source Contributor</p>
           <div className="flex justify-center space-x-6 mb-8">
